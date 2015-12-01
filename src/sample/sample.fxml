@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="561.67822265625" prefWidth="577.000199999995" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.Controller">
+  <children>
+    <ListView id="listViewContacts" fx:id="listViewPizzas" layoutX="14.0" layoutY="51.0" onMouseClicked="#mouseClickLV" orientation="VERTICAL" prefHeight="198.0" prefWidth="552.0" />
+    <Text layoutX="28.0" layoutY="34.0" scaleX="1.6770994048931012" scaleY="1.9390602055800295" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzeria" />
+    <Text layoutX="58.0" layoutY="276.0" scaleX="1.6770994048931012" scaleY="1.9390602055800295" strokeType="OUTSIDE" strokeWidth="0.0" text="Add ingredients">
+      <font>
+        <Font size="10.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text font="$x1" layoutX="338.0" layoutY="274.0" scaleX="1.6770994048931012" scaleY="1.9390602055800295" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove ingredients" />
+    <Button id="btnRemoveAddress" layoutX="13.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#changeIngredientsBtn" prefHeight="43.0" prefWidth="552.0" text="Change ingredients" />
+    <Group id="Group" layoutX="45.0" layoutY="503.0" scaleX="1.0" scaleY="1.0">
+      <children>
+        <Text layoutX="0.0" layoutY="8.0" scaleX="1.5777714554640465" scaleY="2.0657998125162442" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients:">
+          <font>
+            <Font size="8.0" fx:id="x2" />
+          </font>
+        </Text>
+        <Text font="$x2" layoutX="1.0" layoutY="33.0" scaleX="1.5777714554640465" scaleY="2.0657998125162442" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost:" />
+      </children>
+    </Group>
+    <VBox id="VBox" alignment="TOP_LEFT" layoutX="47.0" layoutY="293.0" prefHeight="104.0" spacing="5.0">
+      <children>
+        <CheckBox id="tomatoSauceCB" fx:id="tsAddCB" mnemonicParsing="false" text="tomato sauce" />
+        <CheckBox id="hamCB" fx:id="hAddCB" mnemonicParsing="false" text="ham" />
+        <CheckBox id="oliveCB" fx:id="oAddCB" mnemonicParsing="false" text="olive" />
+        <CheckBox id="salamiCB" fx:id="sAddCB" mnemonicParsing="false" text="salami" />
+        <CheckBox id="cheeseCB" fx:id="cAddCB" mnemonicParsing="false" text="cheese" />
+        <CheckBox id="paprikaCB" fx:id="pAddCB" mnemonicParsing="false" text="paprika" />
+      </children>
+    </VBox>
+    <Text fx:id="ingredientsText" layoutX="105.0" layoutY="514.0" scaleX="1.0000045173812164" scaleY="1.1670643661282427" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutaj ing" />
+    <Text fx:id="costText" layoutX="105.0" layoutY="538.0" scaleX="0.9999954826187836" scaleY="1.1670643661282427" strokeType="OUTSIDE" strokeWidth="0.0" text="27.91 zł" />
+    <VBox id="VBox" alignment="TOP_LEFT" layoutX="322.0" layoutY="293.0" prefHeight="104.0" spacing="5.0">
+      <children>
+        <CheckBox id="tomatoSauceCB" fx:id="tsRemoveCB" mnemonicParsing="false" text="tomato sauce" />
+        <CheckBox id="hamCB" fx:id="hRemoveCB" mnemonicParsing="false" text="ham" />
+        <CheckBox id="oliveCB" fx:id="oRemoveCB" mnemonicParsing="false" text="olive" />
+        <CheckBox id="salamiCB" fx:id="sRemoveCB" mnemonicParsing="false" text="salami" />
+        <CheckBox id="cheeseCB" fx:id="cRemoveCB" mnemonicParsing="false" text="cheese" />
+        <CheckBox id="paprikaCB" fx:id="pRemoveCB" mnemonicParsing="false" text="paprika" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
